@@ -1,7 +1,24 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    val tom = worker("Tom")
+    val kate=worker ("kate", 12)
+    val steeve=worker("Steeve", "dps", 20)
+    val poul=worker("Paul", "idk", 20020)
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    tom.status()
+    kate.status()
+    steeve.status()
+
+    tom.placeofwork("howhere")
+    kate.placeofwork("home")
+    steeve.placeofwork("office")
+
+    println("\n")
+
+    val jobs=designer("Jobs", 12)
+    val alex=designer("Alex",2000)
+    jobs.status()
+    alex.status()
+
+    alex.placeofwork("home")
+    jobs.placeofwork("google")
 }
