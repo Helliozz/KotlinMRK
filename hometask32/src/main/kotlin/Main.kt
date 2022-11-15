@@ -1,7 +1,17 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val cir=circle(10F)
+    val tri=triangle(1F, 10F, 0.5F)
+    val sq=square(2F)
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println("\n${cir.perimetr} ${cir.squareDegree}")
+    cir.conclusionperimeter()
+    cir.conclusionsquare()
+
+    println("\n${tri.perimetr} ${tri.squareDegree}")
+    tri.conclusionperimeter()
+    tri.conclusionsquare()
+
+    println("\n${sq.perimetr} ${sq.squareDegree}")
+    sq.conclusionperimeter()
+    sq.conclusionsquare()
 }
